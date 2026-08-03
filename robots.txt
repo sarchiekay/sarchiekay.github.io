@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sarahkwenda.com/sitemap.xml
