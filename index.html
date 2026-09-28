@@ -424,6 +424,33 @@
   .timeline-company a:hover, .case-date a:hover { color: var(--sage); border-color: var(--sage); }
   .timeline-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; max-width: 600px; }
 
+  /* ─── TOOLKIT ─── */
+  #toolkit { background: var(--bg-light); }
+  .toolkit-panel {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px 40px;
+  }
+  .tool-group { padding: 36px 0; border-bottom: 1px solid var(--border); }
+  .tool-group:last-child { border-bottom: none; }
+  .tool-group-title { font-size: 18px; font-weight: 500; color: var(--text); margin-bottom: 28px; }
+  .tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px; }
+  .tool-head { display: flex; align-items: center; gap: 20px; margin-bottom: 16px; }
+  .tool-icon {
+    width: 72px; height: 72px;
+    background: var(--bg-light);
+    border: 1px solid var(--sage-light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .tool-icon img { width: 34px; height: 34px; display: block; object-fit: contain; }
+  .tool-name { font-size: 18px; font-weight: 500; color: var(--text); }
+  .tool p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
   /* ─── CREDENTIALS ─── */
   #credentials { background: #3D6B50; }
   #credentials .section-title { color: var(--white); }
@@ -605,6 +632,8 @@
     #hero { padding: 100px 24px 72px; }
     .contact-grid, .creds-grid { grid-template-columns: 1fr; gap: 32px; }
     .pillars { grid-template-columns: 1fr; }
+    .toolkit-panel { padding: 4px 24px; }
+    .tools-grid { grid-template-columns: 1fr; }
     .ai-cards { grid-template-columns: 1fr; }
     .case { grid-template-columns: 1fr; }
     .case-number { display: none; }
@@ -624,6 +653,7 @@
     <li><a href="#services">What I Do</a></li>
     <li><a href="#work">My Work</a></li>
     <li><a href="#experience">Where I've Been</a></li>
+    <li><a href="#toolkit">Toolkit</a></li>
     <li><a href="#ai">How I Work</a></li>
     <li><a href="#contact" class="nav-cta">Let's Connect</a></li>
   </ul>
@@ -861,6 +891,158 @@
         </div>
         <div class="timeline-company"><a href="https://www.linkedin.com/company/thegreenestoffice/?originalSubdomain=za" target="_blank">The Greenest Office</a></div>
         <p class="timeline-desc">Where it started - closest to the customer, translating what they needed into something the team could act on. Turns out that's still basically the job.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section id="toolkit">
+  <div class="section-inner">
+    <div class="section-label">Toolkit</div>
+    <h2 class="section-title">The tools behind the work.</h2>
+    <p class="section-intro">Tools don't ship products, teams do. But the right stack keeps the backlog honest, the flows visible, and the whole team working from the same picture.</p>
+    <div class="toolkit-panel">
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">Planning and Delivery</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/jira.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Jira</span>
+            </div>
+            <p>Where the backlog lives. Epics, user stories, acceptance criteria, and sprint planning, set up so engineering, QA, and stakeholders can see what's in flight and what's next.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/asana.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Asana</span>
+            </div>
+            <p>For cross-functional work that sits outside the sprint: launch checklists, compliance sign-offs, GTM tasks, and operational readiness across support, ops, and partners.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">Documentation and Systems Design</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/confluence.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Confluence</span>
+            </div>
+            <p>The single source of truth. Specs, PRDs, SOPs, runbooks, and onboarding guides, written so someone new can pick them up and act without a handover call.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/lucid.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Lucidchart</span>
+            </div>
+            <p>UML sequence diagrams, system flows, and integration maps. Drawing the flow end-to-end is often the fastest way to find the requirement nobody wrote down.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">Design and Prototyping</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/balsamiq.png" alt="" loading="lazy"></div>
+              <span class="tool-name">Balsamiq</span>
+            </div>
+            <p>Low-fidelity wireframes to sketch out flows early. Keeping it rough keeps the conversation on the problem and the user journey, not colours and pixels.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/magicpatterns.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Magic Patterns</span>
+            </div>
+            <p>AI prototyping that turns user stories into clickable UI in minutes. Great for testing an idea with stakeholders before it takes up design or engineering time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">Workshops and Collaboration</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/miro.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Miro</span>
+            </div>
+            <p>Discovery workshops, story mapping, and retros. A shared board gets business, engineering, and ops aligned on the problem before anyone starts writing tickets.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/slack.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Slack</span>
+            </div>
+            <p>Async-first team communication: incident threads, stakeholder updates, and weekly wins, keeping people informed without pulling them into another meeting.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">Productivity Suites</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/microsoft365.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Microsoft 365</span>
+            </div>
+            <p>Excel for reconciliation and reporting, PowerPoint for stakeholder and partner updates, and Teams for working with teams and partners across markets.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/google-workspace.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Google Workspace</span>
+            </div>
+            <p>Shared Docs and Sheets for quick collaboration with partners and clients, plus Meet and Calendar when I'm working in their environment rather than mine.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">Engineering Visibility</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/gitlab.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">GitLab</span>
+            </div>
+            <p>Following merge requests from feature branch to staging to production, so I know exactly what's live, what's in QA, and what's about to ship.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/grafana.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Grafana</span>
+            </div>
+            <p>Production logs and daily health checks. When something breaks, I trace the transaction myself so incident updates are based on evidence, not guesswork.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <h3 class="tool-group-title">AI-Augmented Work</h3>
+        <div class="tools-grid">
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/claude.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Claude Code</span>
+            </div>
+            <p>My AI co-pilot for delivery. Drafting stories and acceptance criteria, investigating production issues, and building automations that take the repetitive work off the team.</p>
+          </div>
+          <div class="tool">
+            <div class="tool-head">
+              <div class="tool-icon"><img src="assets/icons/granola.svg" alt="" loading="lazy"></div>
+              <span class="tool-name">Granola</span>
+            </div>
+            <p>AI meeting notes, so I can stay fully present in the conversation. Decisions and action items get captured and followed up on, not lost after the call.</p>
+          </div>
+        </div>
       </div>
 
     </div>
